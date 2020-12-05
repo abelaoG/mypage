@@ -1,0 +1,222 @@
+body {
+	
+	background: #c0c0c0;
+
+	--primary-color:#f0f0f3;
+	--light-color:#ffffff;
+	--dark-color:rgba(174,174,192,0.4);
+}
+
+
+#compra {
+	padding-left: 100px;
+}
+
+#parrafo {
+	
+	position: relative;
+}
+
+h5 {
+	color: #5d6464;
+	font-family: 'Trispace', sans-serif,
+}
+
+h4 {
+	
+	font-family: 'Trispace', sans-serif;
+}
+
+h1 {
+	
+	font-family: 'Trispace', sans-serif;
+}
+
+p {
+	color: #5d6464;
+}
+
+#butt {
+	font-size: 12px;
+}
+
+#butt {
+
+	height: 60px;
+	padding: 0 30px;
+	border-radius: 98px;
+	border:transparent solid 3px;
+	cursor: pointer;
+	font-size: 22px;
+	color: #808b9f;
+	background: linear-gradient(315deg, #d8d8db, #fffff3);
+	box-shadow:  inset -3px -3px 30px var(--dark-color),
+	inset 3px 5px 16px var(--dark-color);
+
+}
+
+#butt:active {
+	border: var(--primary-color) solid 4px;
+	box-shadow: -10px -10px 30px var(--light-color),
+	10px 10px 30px var(--dark-color),
+	inset -3px -3px 30px var(--dark-color),
+	inset 10px 10px 30px var(--light-color),
+}
+
+#butt:focus {
+	outline: none;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.links a{
+    margin: 0 10px;
+
+}
+
+.links a i {
+    font-size: 2rem;
+}
+
+
+/*Responsive*/
+
+
+.contenedor {
+	max-width: 1200px;
+	width: 90%;
+	margin: auto;
+
+}
+
+/* --- --- CONTENEDOR PRINCIPAL --- --- */
+
+.contenido-principal {
+	margin-bottom: 50px;
+	display: flex;
+	align-items: center;
+}
+
+.contenido-principal__imagen {
+	vertical-align: top;
+	margin-right: 0px;
+	width: 120px;
+	max-width: auto;
+	overflow: hidden;
+	margin: auto;
+	transition: width 2s;
+	
+
+}
+
+.contenido-principal__imagen:hover{
+	width: 180px;
+
+} 
+
+.contenido-principal__contenedor {
+	width: 50%;
+
+}
+
+.contenido-principal__titulo {
+	font-weight: normal;
+	font-size: 28px;
+}
+
+.contenido-principal__resumen {
+	padding-left: 50px;
+	text-align: justify;
+}
+
+.carousel__elemento{
+	transition: $animation;
+}
+
+.carousel__elemento:hover {
+	border: 2px solid #c0c0c0
+}
+
+/* --- --- CAROUSEL --- --- */
+.carousel__contenedor {
+	position: relative;
+}
+
+.carousel__anterior,
+.carousel__siguiente {
+	position: absolute;
+	display: block;
+	width: 30px;
+	height: 30px;
+	border: none;
+	top: calc(50% - 35px);
+	cursor: pointer;
+	line-height: 30px;
+	text-align: center;
+	background: none;
+	color: #fff;
+	opacity: 20%;
+}
+
+.carousel__anterior:hover,
+.carousel__siguiente:hover {
+	opacity: 100%;
+}
+
+.carousel__anterior {
+	left: -30px;
+}
+
+.carousel__siguiente {
+	right: -30px;
+}
+
+.carousel__lista {
+	overflow: hidden;
+}
+
+.carousel__elemento {
+	text-align: center;
+}
+
+.carousel__indicadores .glider-dot {
+	display: block;
+	width: 30px;
+	height: 4px;
+	background: #fff;
+	opacity: .2;
+	border-radius: 0;
+}
+
+.carousel__indicadores .glider-dot:hover {
+	opacity: .5;
+}
+
+.carousel__indicadores .glider-dot.active {
+	opacity: 1;
+}
+
+@media screen and (max-width: 700px) {
+	body {
+		padding: 40px 0;
+	}
+
+	.contenido-principal {
+		flex-direction: column;
+	}
+
+	.contenido-principal > * {
+		width: 100%;
+	}
+
+	.row {
+		padding-left: 10px; 
+	}
+}
+
+
